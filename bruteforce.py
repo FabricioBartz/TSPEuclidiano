@@ -6,8 +6,6 @@ import os
 def ler_matriz_arquivo(caminho_arquivo):
     """
     Lê uma matriz de adjacência de um arquivo .txt.
-    Cada linha contém os valores separados por espaço.
-    Retorna a matriz como uma lista de listas de floats.
     """
     matriz = []
     with open(caminho_arquivo, 'r') as f:
@@ -19,8 +17,7 @@ def ler_matriz_arquivo(caminho_arquivo):
 
 def extrair_custo_otimo(nome_arquivo):
     """
-    Extrai o valor ótimo esperado do nome do arquivo.
-    Exemplo: 'tsp1_253.txt' → 253
+    Extrai o custo ótimo do nome do arquivo.
     """
     match = re.search(r'_(\d+)\.txt$', nome_arquivo)
     if match:
@@ -96,4 +93,4 @@ if __name__ == "__main__":
     if custo_otimo:
         print(f"Custo ótimo (esperado): {custo_otimo:.2f}")
         print(f"Erro percentual: {erro_percentual:.2f}%")
-    print(f"Tempo de execução: {tempo_execucao:.4f} segundos")
+    print(f"Tempo de execução: {tempo_execucao:.8f} segundos")
