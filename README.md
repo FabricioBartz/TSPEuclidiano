@@ -1,6 +1,6 @@
-#Algoritmos TSP — Força Bruta e Aproximação (Kruskal / MST)
+# Algoritmos TSP — Força Bruta e Aproximação (Kruskal / MST)
 
-##Para utilização do código siga as seguintes etapas:
+## Para utilização do código siga as seguintes etapas:
 
 1. Garantir que sua máquina tenha instalado a linguagem python.
 2. Verifique se os arquivos .txt então dentro da pasta instancias.
