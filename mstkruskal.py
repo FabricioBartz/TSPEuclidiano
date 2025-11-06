@@ -2,7 +2,6 @@ import time
 import re
 import os
 
-# --- Funções de leitura e utilidades (iguais às do seu código) ---
 def ler_matriz_arquivo(caminho_arquivo):
     matriz = []
     with open(caminho_arquivo, 'r') as f:
